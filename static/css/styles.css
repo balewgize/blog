@@ -19,7 +19,7 @@ a {
     left: 0;
     height: 100%;
     overflow-y: auto;
-    width: 260px;
+    width: 210px;
     z-index: 99;
     background: #eeeeee;
     scrollbar-width: none;
@@ -208,7 +208,7 @@ a {
 
 @media (min-width: 850px) {
     #sidebar {
-        width: 210px;
+        width: 260px;
     }
 
     #sidebar .sidebar-bottom a,
