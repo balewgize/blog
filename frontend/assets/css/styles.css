@@ -2,8 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', 'Microsoft Yahei', sans-serif;
+    overflow-x: hidden;
+
 }
+
+/* html {
+    overflow: hidden;
+} */
 
 a {
     text-decoration: none;
@@ -21,6 +27,7 @@ a {
     z-index: 99;
     background: #eeeeee;
     scrollbar-width: none;
+    transition: 0.5s;
 }
 
 #avatar {
@@ -52,7 +59,7 @@ a {
 }
 
 #sidebar ul {
-    height: 15rem;
+    /* height: 15rem; */
     margin-bottom: 2rem;
     padding-left: 0;
     color: #868585;
@@ -107,20 +114,59 @@ a {
     height: 3rem;
     position: fixed;
     top: 0;
-    left: 260px;
     right: 0;
     transition: top 0.2s ease-in-out;
     z-index: 50;
     border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     background-color: #ffffff;
+    transition: 0.5s;
 }
 
 #topbar-wrapper #hideMenu {
     display: none;
 }
 
+#main-wrapper {
+    background-color: #ffffff;
+    position: relative;
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    /* left: 260px; */
+    transition: 0.5s;
+    overflow: hidden;
+}
 
-@media (min-width: 850px) and (max-width: 1199px) {
+.post-preview h1 {
+    font-size: 1.4rem;
+}
+
+.post-preview h1 a {
+    color: #007bff;
+}
+
+.post-content {
+    color: #696969;
+}
+
+.access li {
+    margin: 10px 0;
+}
+
+.access a {
+    color: #696969;
+}
+
+.access a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.panel-heading {
+    color: #424242;
+}
+
+@media (min-width: 850px) {
     #sidebar {
         width: 210px;
     }
@@ -130,7 +176,8 @@ a {
         width: 2rem;
     }
 
-    #topbar-wrapper {
+    #topbar-wrapper,
+    #main-wrapper {
         left: 210px;
     }
 
@@ -143,9 +190,7 @@ a {
         margin-left: 1rem;
         margin-right: 1rem;
     }
-}
 
-@media (min-width: 850px) {
     .profile-wrapper {
         margin-top: 3rem;
     }
@@ -154,9 +199,11 @@ a {
 @media (max-width: 850px) {
     #sidebar {
         left: -260px;
+        padding-top: 20px;
     }
 
-    #topbar-wrapper {
+    #topbar-wrapper,
+    #main-wrapper {
         left: 0;
     }
 }
