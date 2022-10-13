@@ -1,0 +1,90 @@
+.written-by a {
+    color: #424242;
+}
+
+.written-by a:hover {
+    color: #007bff;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    word-spacing: 1px;
+}
+
+.post-date {
+    color: #424242;
+}
+
+.post-content {
+    font-size: 1.08rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.post-meta .dot::before {
+    content: "\2022";
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+
+.post-tags a {
+    background: #eeeeee;
+    color: #424242;
+    border-radius: 2px;
+    padding: 0 5px 1px;
+}
+
+.post-tags a:hover {
+    color: #007bff;
+}
+
+.fa-tags:before {
+    content: "\f02c";
+}
+
+.share-wrapper {
+    vertical-align: middle;
+    user-select: none;
+}
+
+.share-wrapper .share-icons {
+    font-size: 1.2rem;
+}
+
+.card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#related-posts .card {
+    box-shadow: 0 0 5px 0 var(--card-box-shadow);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-deck .card {
+    flex: 1 0 0%;
+    margin: 0 15px 25px 15px;
+    font-size: 1.2rem;
+}
+
+.card-body h3 {
+    color: #424242;
+    font-size: 1.2rem;
+}
+
+.card-body small, em.small {
+    font-size: 0.85rem;
+    font-style: normal;
+}
+
+#related-posts > h3 {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #424242;
+}

@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Alemnew's Personal Blog {% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% include "navbar.html" %}
+
+<div id="topbar-wrapper" class="w-100">
+    <div id="topbar" class="container pt-3">
+        <span class="d-none d-md-flex align-items-center">
+            <span id="breadcump"><a href="{% url 'blog:home' %}">Home</a></span>
+            <i class="mx-2 text-muted fas fa-angle-right" style="font-size: 10px; padding-top: 5px;"></i>
+            <span class="text-muted">Getting Started</span>
+        </span>
+        <span class="d-block d-md-none d-flex align-items-center justify-content-between ps-3 pe-3 ps-md-4 pe-md-4">
+            <i id="sidebar-trigger" onclick="showMenu()" class="fas fa-bars fa-fw"></i>
+            <i id="hideMenu" onclick="hideMenu()" class="fas fa-times fa-fw pe-5"></i>
+            <span div id="topbar-title">Blog</span>
+            <i>&nbsp;</i>
+        </span>
+    </div>
+</div>
+
+<div id="main-wrapper" class="d-flex justify-content-center">
+    <div id="main" class="container mt-5">
+        <div class="row">
+            <div id="core-wrapper" class="col-12 col-lg-10 col-xl-8 pe-xl-4 pb-5">
+                <div class="post ps-1 pe-1 ps-md-2 pe-md-2">
+                    <div id="post-list" class="py-4">
+                        <div class="post-preview border-bottom py-4">
+                            <h1>Getting Started</h1>
+                            <div class="post-meta text-muted mt-4">
+                                <span> Posted <span class="post-date">Oct 12, 2022</span> </span>
+                                <span class="dot"></span>
+                                <span> Updated <span class="post-date">Oct 13, 2022</span> </span>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <span class="written-by"> By <a href="https://www.linkedin.com/in/balewgize/"
+                                            target="_blank">Alemnew
+                                            &nbsp;</a>
+                                    </span>
+                                    <div>
+                                        <span> <span class="readtime"> 5 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <p> Prerequisites Follow the instructions in the Jekyll Docs to complete the
+                                    installation of Ruby, RubyGems, Jekyll, and Bundler. In addition, Git is also
+                                    required to be installed. Installation Crea...</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non consequat libero,
+                                    eu rhoncus mi. Sed imperdiet dolor nec mattis condimentum. Suspendisse ut tincidunt
+                                    diam. Praesent luctus cursus lectus, commodo bibendum justo. Maecenas venenatis
+                                    placerat magna ac tristique.</p>
+
+                                <p>Nulla eget odio dignissim, blandit mauris in, varius
+                                    leo. Nam placerat, massa a pretium fringilla, urna felis aliquam velit, ut semper
+                                    urna ex ac dolor. </p>
+
+                                <p>Mauris tincidunt ac tortor at sodales. Aliquam enim tortor,
+                                    imperdiet at justo id, cursus dictum sapien. Etiam ornare metus at felis sodales,
+                                    fermentum lacinia justo scelerisque. Aenean lacinia nisi sit amet ante posuere, sed
+                                    suscipit augue eleifend. Class aptent taciti sociosqu ad litora torquent per conubia
+                                    nostra, per inceptos himenaeos. Proin in arcu metus.</p>
+
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                </ul>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non consequat libero,
+                                    eu rhoncus mi. Sed imperdiet dolor nec mattis condimentum. Suspendisse ut tincidunt
+                                    diam. Praesent luctus cursus lectus, commodo bibendum justo. Maecenas venenatis
+                                    placerat magna ac tristique.</p>
+
+                                <p>Nulla eget odio dignissim, blandit mauris in, varius
+                                    leo. Nam placerat, massa a pretium fringilla, urna felis aliquam velit, ut semper
+                                    urna ex ac dolor. </p>
+
+                                <p>Mauris tincidunt ac tortor at sodales. Aliquam enim tortor,
+                                    imperdiet at justo id, cursus dictum sapien. Etiam ornare metus at felis sodales,
+                                    fermentum lacinia justo scelerisque. Aenean lacinia nisi sit amet ante posuere, sed
+                                    suscipit augue eleifend. Class aptent taciti sociosqu ad litora torquent per conubia
+                                    nostra, per inceptos himenaeos. Proin in arcu metus.</p>
+                            </div>
+                            <div class="post-meta mt-5 mb-3">
+                                <i class="far fa-folder-open fa-fw mr-1"></i>
+                                <a href="/categories/blogging/">Blogging</a>,
+                                <a href="/categories/tutorial/">Tutorial</a>
+                            </div>
+
+                            <div class="post-tags">
+                                <i class="fa fa-tags fa-fw mr-1"></i>
+                                <a href="/tags/getting-started/" class="post-tag no-text-decoration">getting
+                                    started</a>
+                            </div>
+                            <div class="post-meta text-muted mt-5">
+                                <div class="d-flex flex-column flex-md-row justify-content-between">
+                                    <span class="mb-2 mb-md-0">This post is licensed under <a
+                                            href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
+                                            class="text-dark">CC BY
+                                            4.0</a> by the author.</span>
+                                    <div class="share-wrapper"> <span class="share-label text-muted me-1">Share: </span>
+                                        <span class="share-icons">
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title=""
+                                                target="_blank" rel="noopener" aria-label="Facebook"
+                                                data-original-title="Facebook"> <i
+                                                    class="fa-fw fab fa-facebook-square"></i> </a>
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title=""
+                                                target="_blank" rel="noopener" aria-label="Telegram"
+                                                data-original-title="Telegram"> <i class="fa-fw fab fa-telegram"></i>
+                                            </a>
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title=""
+                                                target="_blank" rel="noopener" aria-label="LinkedIn"
+                                                data-original-title="LinkedIn"> <i class="fa-fw fab fa-linkedin"></i>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="panel-wrapper" class="d-none d-md-block col-xl-3 ps-2 text-muted">
+                <div class="access">
+                    <div id="access-lastmod" class="post border-start p-2 my-5">
+                        <div class="panel-heading">Recently Updated</div>
+                        <ul class="post-content ps-0 pb-1 ms-1 mt-2">
+                            <li><a href="#">Enable Google Page Views</a></li>
+                            <li><a href="#">Writing a New Post</a></li>
+                            <li><a href="#">Getting Started</a></li>
+                            <li><a href="#">Text and Typography</a></li>
+                            <li><a href="#">Customize the Favicon</a></li>
+                        </ul>
+                    </div>
+                    <div id="access-tags" class="border-start p-2 my-5">
+                        <div class="panel-heading">Trending Tags</div>
+                        <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+                            <a class="tag" href="/tags/favicon/">favicon</a>
+                            <a class="tag" href="/tags/getting-started/">getting started</a>
+                            <a class="tag" href="/tags/google-analytics/">google
+                                analytics</a>
+                            <a class="tag" href="/tags/pageviews/">pageviews</a>
+                            <a class="tag" href="/tags/typography/">typography</a>
+                            <a class="tag" href="/tags/writing/">writing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="tail-wrapper">
+                <div class="col-12 col-lg-11 col-xl-9 ps-3 pe-3 pe-xl-4">
+                    <div id="related-posts" class="mb-2 mb-sm-4">
+                        <h3 class="pt-2 mb-4 ml-1" data-toc-skip="">Further Reading</h3>
+                        <div class="card-deck mb-4 d-flex flex-column flex-md-row">
+                            <div class="card">
+                                <a href="/posts/write-a-new-post/">
+                                    <div class="card-body"> <em class="small text-muted">Aug 8, 2019</em>
+                                        <h3 class="pt-0 mt-1 mb-3" data-toc-skip="">Writing a New Post</h3>
+                                        <div class="text-muted small">
+                                            <p> This post will guide you how to write a post on Chirpy theme...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="/posts/customize-the-favicon/">
+                                    <div class="card-body"> <em class="small text-muted">Aug 10, 2019</em>
+                                        <h3 class="pt-0 mt-1 mb-3" data-toc-skip="">Customize the Favicon</h3>
+                                        <div class="text-muted small">
+                                            <p> The favicons of Chirpy are placed in the directory you may want...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="/posts/enable-google-pv/">
+                                    <div class="card-body"> <em class="small text-muted">Jan 4, 2021</em>
+                                        <h3 class="pt-0 mt-1 mb-3" data-toc-skip="">Enable Google Page Views</h3>
+                                        <div class="text-muted small">
+                                            <p> The content of this post applies only to Universal Analytics...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include "footer.html" %}
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

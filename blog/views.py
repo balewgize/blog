@@ -7,7 +7,7 @@ def index(request):
 
 
 def post_detail(request, slug="post-slug-will-be-passed-from-url"):
-    return HttpResponse("Post detail")
+    return render(request, "blog/post_detail.html")
 
 
 def categories(request):
