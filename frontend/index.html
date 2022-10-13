@@ -44,16 +44,44 @@
         </div>
     </div>
 
-    <div id="topbar-wrapper">
-        <div id="topbar"
-            class="container d-flex align-items-center justify-content-between border-bottom h-100 ps-3 pe-3 ps-md-4 pe-md-4">
-            <span id="breadcrumb"> <span>Home</span> </span>
-
-            <!-- <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
-            <div id="topbar-title"> Blog</div>
-            <i id="sidebar-trigger" class="fas fa-search fa-fw"></i> -->
+    <div id="topbar-wrapper" class="w-100">
+        <div id="topbar" class="container px-0 px-md-5 pt-2">
+            <span id="breadcrumb" class="d-none d-md-block ps-3 pe-3 ps-md-4 pe-md-4"> <span>Home</span> </span>
+            <span class="d-block d-md-none d-flex align-items-center justify-content-between ps-3 pe-3 ps-md-4 pe-md-4">
+                <i id="sidebar-trigger" onclick="showMenu()" class="fas fa-bars fa-fw"></i>
+                <i id="hideMenu" onclick="hideMenu()" class="fas fa-times fa-fw"></i>
+                <span div id="topbar-title"> Blog</span>
+                <i>&nbsp;</i>
+            </span>
         </div>
     </div>
+
+    <script>
+        sidebarTrigger = document.querySelector("#sidebar-trigger");
+        sidebar = document.querySelector("#sidebar");
+        topWrapper = document.querySelector("#topbar-wrapper");
+
+        hideMenuIcon = document.querySelector("#hideMenu");
+
+
+        function showMenu() {
+            sidebar.style.left = "0";
+            topWrapper.style.left = "260px";
+
+            // switch icons
+            sidebarTrigger.style.display = "none";
+            hideMenuIcon.style.display = "block";
+        }
+
+        function hideMenu() {
+            sidebar.style.left = "-260px";
+            topWrapper.style.left = "0";
+
+            sidebarTrigger.style.display = "block";
+            hideMenuIcon.style.display = "none";
+        }
+
+    </script>
 
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

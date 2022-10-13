@@ -115,6 +115,10 @@ a {
     background-color: #ffffff;
 }
 
+#topbar-wrapper #hideMenu {
+    display: none;
+}
+
 
 @media (min-width: 850px) and (max-width: 1199px) {
     #sidebar {
@@ -144,5 +148,15 @@ a {
 @media (min-width: 850px) {
     .profile-wrapper {
         margin-top: 3rem;
+    }
+}
+
+@media (max-width: 850px) {
+    #sidebar {
+        left: -260px;
+    }
+
+    #topbar-wrapper {
+        left: 0;
     }
 }
