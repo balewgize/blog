@@ -1,20 +1,20 @@
 <div id="sidebar" class="d-flex flex-column align-items-end">
     <div class="profile-wrapper text-center">
         <div id="avatar" class="border border-2 rounded-circle">
-            <a href="" class="p-auto">A</a>
+            <a href="{% url 'blog:home' %}" class="px-5"></a>
         </div>
         <div class="site-title mt-3"> <a href="">Alemnew</a></div>
         <div class="site-subtitle font-italic">A collection of my thoughts, experiences, tips and
             tutorials.</div>
     </div>
     <ul class="list-unstyled w-100 py-3">
-        <li class="nav-item active"> <a href="#" class="nav-link"><span>HOME</span> </a></li>
-        <li class="nav-item"> <a href="#" class="nav-link"><span>CATEGORIES</span>
+        <li class="nav-item active"> <a href="{% url 'blog:home' %}" class="nav-link"><span>HOME</span> </a></li>
+        <li class="nav-item"> <a href="{% url 'blog:categories' %}" class="nav-link"><span>CATEGORIES</span>
             </a></li>
-        <li class="nav-item"> <a href="#" class="nav-link"><span>TAGS</span> </a></li>
-        <li class="nav-item"> <a href="#" class="nav-link"><span>ARCHIVES</span>
+        <li class="nav-item"> <a href="{% url 'blog:tags' %}" class="nav-link"><span>TAGS</span> </a></li>
+        <li class="nav-item"> <a href="{% url 'blog:archives' %}" class="nav-link"><span>ARCHIVES</span>
             </a></li>
-        <li class="nav-item"> <a href="#" class="nav-link"><span>ABOUT</span>
+        <li class="nav-item"> <a href="{% url 'blog:about' %}" class="nav-link"><span>ABOUT</span>
             </a></li>
     </ul>
     <div class="sidebar-bottom mt-auto d-flex justify-content-center align-items-center">

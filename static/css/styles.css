@@ -30,6 +30,9 @@ a {
     width: 100px;
     height: 100px;
     margin: auto;
+    background-image: url("https://raw.githubusercontent.com/balewgize/balewgize.github.io/main/assets/img/profile.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 #avatar a {
@@ -142,7 +145,7 @@ a {
 }
 
 .post-preview h1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .post-preview h1 a {
@@ -206,7 +209,19 @@ a {
     position: fixed;
 }
 
-@media (min-width: 850px) {
+@media (max-width: 768px) {
+    #sidebar {
+        left: -260px;
+        padding-top: 20px;
+    }
+
+    #topbar-wrapper,
+    #main-wrapper {
+        left: 0;
+    }
+}
+
+@media (min-width: 768px) {
     #sidebar {
         width: 260px;
     }
@@ -233,17 +248,5 @@ a {
 
     .profile-wrapper {
         margin-top: 3rem;
-    }
-}
-
-@media (max-width: 850px) {
-    #sidebar {
-        left: -260px;
-        padding-top: 20px;
-    }
-
-    #topbar-wrapper,
-    #main-wrapper {
-        left: 0;
     }
 }
