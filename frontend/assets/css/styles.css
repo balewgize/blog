@@ -200,6 +200,12 @@ a {
     color: #007bff;
 }
 
+#go-top {
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+}
+
 @media (min-width: 850px) {
     #sidebar {
         width: 210px;
