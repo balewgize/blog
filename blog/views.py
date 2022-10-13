@@ -15,7 +15,7 @@ def categories(request):
 
 
 def tags(request):
-    return HttpResponse("Tags page")
+    return render(request, "blog/tags.html")
 
 
 def archives(request):

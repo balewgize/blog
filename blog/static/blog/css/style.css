@@ -78,13 +78,29 @@
     font-size: 1.2rem;
 }
 
-.card-body small, em.small {
+.card-body small,
+em.small {
     font-size: 0.85rem;
     font-style: normal;
 }
 
-#related-posts > h3 {
+#related-posts>h3 {
     font-size: 1.15rem;
     font-weight: bold;
     color: #424242;
+}
+
+#tags .tag {
+    border-radius: 0.7em;
+    padding: 6px 8px 7px;
+    margin-right: 0.8rem;
+    line-height: 3rem;
+    letter-spacing: 0;
+    border: 1px solid #dee2e6 !important;
+    box-shadow: 0 0 3px 0 #e9ecef;
+}
+
+#tags .tag:hover {
+    color: #007bff;
+    background-color: #eeeeee;
 }
