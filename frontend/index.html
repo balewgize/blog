@@ -46,7 +46,11 @@
 
     <div id="topbar-wrapper" class="w-100">
         <div id="topbar" class="container pt-3">
-            <span> <span class="d-none d-md-block">Home</span> </span>
+            <span class="d-none d-md-flex align-items-center">
+                <span id="breadcump"><a href="">Home</a></span>
+                <i class="mx-2 text-muted fas fa-angle-right" style="font-size: 10px; padding-top: 5px;"></i>
+                <span class="text-muted">Getting Started</span>
+            </span>
             <span class="d-block d-md-none d-flex align-items-center justify-content-between ps-3 pe-3 ps-md-4 pe-md-4">
                 <i id="sidebar-trigger" onclick="showMenu()" class="fas fa-bars fa-fw"></i>
                 <i id="hideMenu" onclick="hideMenu()" class="fas fa-times fa-fw pe-5"></i>
@@ -95,57 +99,6 @@
                                 </div>
                             </div>
 
-
-                            <div class="post-preview border-bottom py-4">
-                                <h1> <a href="/posts/getting-started/">Getting Started</a></h1>
-                                <div class="post-content">
-                                    <p> Prerequisites Follow the instructions in the Jekyll Docs to complete the
-                                        installation of Ruby, RubyGems, Jekyll, and Bundler. In addition, Git is also
-                                        required to be installed. Installation Crea...</p>
-                                </div>
-                                <div class="post-meta text-muted d-flex">
-                                    <div class="me-auto">
-                                        <i class="far fa-calendar fa-fw"></i> <em class="me-4">Aug 9,
-                                            2019</em> <i class="far fa-folder-open fa-fw"></i> <span> Blogging, Tutorial
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="post-preview border-bottom py-4">
-                                <h1> <a href="/posts/getting-started/">Getting Started</a></h1>
-                                <div class="post-content">
-                                    <p> Prerequisites Follow the instructions in the Jekyll Docs to complete the
-                                        installation of Ruby, RubyGems, Jekyll, and Bundler. In addition, Git is also
-                                        required to be installed. Installation Crea...</p>
-                                </div>
-                                <div class="post-meta text-muted d-flex">
-                                    <div class="me-auto">
-                                        <i class="far fa-calendar fa-fw"></i> <em class="me-4">Aug 9,
-                                            2019</em> <i class="far fa-folder-open fa-fw"></i> <span> Blogging, Tutorial
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="post-preview border-bottom py-4">
-                                <h1> <a href="/posts/getting-started/">Getting Started</a></h1>
-                                <div class="post-content">
-                                    <p> Prerequisites Follow the instructions in the Jekyll Docs to complete the
-                                        installation of Ruby, RubyGems, Jekyll, and Bundler. In addition, Git is also
-                                        required to be installed. Installation Crea...</p>
-                                </div>
-                                <div class="post-meta text-muted d-flex">
-                                    <div class="me-auto">
-                                        <i class="far fa-calendar fa-fw"></i> <em class="me-4">Aug 9,
-                                            2019</em> <i class="far fa-folder-open fa-fw"></i> <span> Blogging, Tutorial
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="post-preview border-bottom py-4">
                                 <h1> <a href="/posts/write-a-new-post/">Writing a New Post</a></h1>
                                 <div class="post-content">
@@ -160,16 +113,16 @@
                                 </div>
                             </div>
                         </div>
-                        <ul class="pagination align-items-center justify-content-space-evenly mt-4 pl-lg-2">
-                            <li class="page-item disabled">
-                                <a class="page-link btn-box-shadow" href="#" aria-label="previous-page"> <i
-                                        class="fas fa-angle-left"></i> </a>
+                        <ul class="pagination d-flex align-items-center justify-content-evenly mt-5">
+                            <li class="border px-2 rounded-circle me-3" title="Previous Page">
+                                <a class="" href="#" aria-label="previous-page"> <i class="fas fa-angle-left"></i> </a>
                             </li>
 
-                            <li class="page-index align-middle"><span class="mx-3 text-muted">1</span></li>
+                            <li class="page-index border px-2 rounded-circle me-3"><span class="text-muted">1</span>
+                            </li>
 
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" aria-label="next-page"> <i class="fas fa-angle-right"></i>
+                            <li class="border px-2 rounded-circle me-3" title="Next Page">
+                                <a class="" href="#" aria-label="next-page"> <i class="fas fa-angle-right"></i>
                                 </a>
                             </li>
                         </ul>
@@ -190,14 +143,15 @@
                         </div>
                         <div id="access-tags" class="border-start p-2 my-5">
                             <div class="panel-heading">Trending Tags</div>
-                            <div class="d-flex flex-wrap mt-3 mb-1 me-3"> <a class="btn btn-outline-primary me-2 mt-2"
-                                    href="/tags/favicon/">favicon</a> <a class="btn btn-outline-primary me-2 mt-2"
-                                    href="/tags/getting-started/">getting started</a> <a
-                                    class="btn btn-outline-primary me-2 mt-2" href="/tags/google-analytics/">google
-                                    analytics</a> <a class="btn btn-outline-primary me-2 mt-2"
-                                    href="/tags/pageviews/">pageviews</a> <a class="btn btn-outline-primary me-2 mt-2"
-                                    href="/tags/typography/">typography</a> <a class="btn btn-outline-primary me-2 mt-2"
-                                    href="/tags/writing/">writing</a></div>
+                            <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+                                <a class="tag" href="/tags/favicon/">favicon</a>
+                                <a class="tag" href="/tags/getting-started/">getting started</a>
+                                <a class="tag" href="/tags/google-analytics/">google
+                                    analytics</a>
+                                <a class="tag" href="/tags/pageviews/">pageviews</a>
+                                <a class="tag" href="/tags/typography/">typography</a>
+                                <a class="tag" href="/tags/writing/">writing</a>
+                            </div>
                         </div>
                     </div>
                 </div>
