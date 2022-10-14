@@ -100,6 +100,25 @@ em.small {
     box-shadow: 0 0 3px 0 #e9ecef;
 }
 
+#page-category ul>li,
+#page-tag ul>li {
+    line-height: 1.5rem;
+    padding: 0.6rem 0;
+}
+
+#page-category ul>li::before,
+#page-tag ul>li::before {
+    background: #999;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    /* display: block; */
+    content: "";
+    position: relative;
+    top: 0.6rem;
+    margin-right: 0.5rem;
+}
+
 #tags .tag:hover {
     color: #007bff;
     background-color: #eeeeee;
@@ -116,4 +135,12 @@ em.small {
 
 .accordion-body hr:last-child {
     display: none;
+}
+
+@media (max-width: 576px) {
+
+    #page-category ul>li::before,
+    #page-tag ul>li::before {
+        margin: 0 0.5rem;
+    }
 }

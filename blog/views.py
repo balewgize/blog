@@ -14,11 +14,15 @@ def categories(request):
     return render(request, "blog/categories.html")
 
 
+def category_detail(request, slug="tagname"):
+    return render(request, "blog/category_detail.html")
+
+
 def tags(request):
     return render(request, "blog/tags.html")
 
 
-def tag_detail(request, tag="tagname"):
+def tag_detail(request, slug="tagname"):
     return render(request, "blog/tag_detail.html")
 
 
