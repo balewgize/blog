@@ -18,6 +18,10 @@ def tags(request):
     return render(request, "blog/tags.html")
 
 
+def tag_detail(request, tag="tagname"):
+    return render(request, "blog/tag_detail.html")
+
+
 def archives(request):
     return HttpResponse("Archives page")
 

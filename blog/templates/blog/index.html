@@ -44,7 +44,7 @@
 
 
                         <div class="post-preview border-bottom py-4">
-                            <h1> <a href="/posts/getting-started/">Getting Started</a></h1>
+                            <h1> <a href="{% url 'blog:post_detail' 'getting-started' %}">Getting Started</a></h1>
                             <div class="post-content">
                                 <p> Prerequisites Follow the instructions in the Jekyll Docs to complete the
                                     installation of Ruby, RubyGems, Jekyll, and Bundler. In addition, Git is also
@@ -60,7 +60,7 @@
                         </div>
 
                         <div class="post-preview border-bottom py-4">
-                            <h1> <a href="/posts/write-a-new-post/">Writing a New Post</a></h1>
+                            <h1> <a href="{% url 'blog:post_detail' 'getting-started' %}">Writing a New Post</a></h1>
                             <div class="post-content">
                                 <p> This post will guide you how to write a post on Chirpy theme. Even if you have
                                     previous experience with Jekyll, this article is worth reading, because many

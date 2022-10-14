@@ -16,12 +16,14 @@
         <span class="d-none d-md-flex align-items-center">
             <span><a href="{% url 'blog:home' %}">Home</a></span>
             <i class="mx-2 text-muted fas fa-angle-right" style="font-size: 10px; padding-top: 5px;"></i>
-            <span class="text-muted">Tags</span>
+            <span class="text-muted"><a href="{% url 'blog:tags' %}">Tags</a></span>
+            <i class="mx-2 text-muted fas fa-angle-right" style="font-size: 10px; padding-top: 5px;"></i>
+            <span class="text-muted">python</span>
         </span>
         <span class="d-block d-md-none d-flex align-items-center justify-content-between ps-3 pe-3 ps-md-4 pe-md-4">
             <i id="sidebar-trigger" onclick="showMenu()" class="fas fa-bars fa-fw"></i>
             <i id="hideMenu" onclick="hideMenu()" class="fas fa-times fa-fw pe-5"></i>
-            <span div id="topbar-title">Tags</span>
+            <span div id="topbar-title">Tag</span>
             <i>&nbsp;</i>
         </span>
     </div>
@@ -32,36 +34,27 @@
         <div class="row h-100">
             <div id="core-wrapper" class="col-12 col-lg-10 col-xl-8 pe-xl-4 pb-5">
                 <div class="post ps-1 pe-1 ps-md-2 pe-md-2">
-                    <div id="post-list" class="py-4">
-                        <div class="post-preview py-4">
-                            <h1>Tags</h1>
-                            <div class="post-content">
-                                <div id="tags" class="d-flex flex-wrap ml-xl-2 mr-xl-2">
-                                    <div>
-                                        <a class="tag" href="{% url 'blog:tag_detail' 'python' %}"> favicon <span
-                                                class="ms-2 text-muted">1</span> </a>
-                                    </div>
-                                    <div>
-                                        <a class="tag" href="{% url 'blog:tag_detail' 'getting started' %}"> getting
-                                            started
-                                            <span class="ms-2 text-muted">4</span> </a>
-                                    </div>
-                                    <div>
-                                        <a class="tag" href="{% url 'blog:tag_detail' 'google analytics' %}"> google
-                                            analytics
-                                            <span class="ms-2 text-muted">2</span> </a>
-                                    </div>
-                                    <div>
-                                        <a class="tag" href="{% url 'blog:tag_detail' 'pageviews' %}"> pageviews <span
-                                                class="ms-2 text-muted">1</span> </a>
-                                    </div>
-                                    <div>
-                                        <a class="tag" href="{% url 'blog:tag_detail' 'typography' %}"> typography <span
-                                                class="ms-2 text-muted">1</span> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="page-tag">
+                        <h1 class="ps-lg-2 mt-5"> <i class="fa fa-tag fa-fw text-muted"></i> python <span
+                                class="lead text-muted pl-2">11</span></h1>
+                        <ul class="post-content ps-0">
+                            <li class="d-flex flex-column flex-md-row justify-content-between ps-md-3 pe-md-3 mb-2">
+                                <a href="{% url 'blog:post_detail' 'post_slug_here' %}">Customize the Favicon</a>
+                                <span class="d-none d-md-inline flex-grow-1 dash"></span> <span
+                                    class="text-muted small mt-sm-0">Oct 13, 2022</span>
+                            </li>
+                            <li class="d-flex flex-column flex-md-row justify-content-between ps-md-3 pe-md-3 mb-2">
+                                <a href="{% url 'blog:post_detail' 'post_slug_here' %}">Getting Started </a><span
+                                    class="d-none d-md-inline flex-grow-1 dash"></span><span
+                                    class="text-muted small">Oct 11, 2022</span>
+                            </li>
+                            <li class="d-flex flex-column flex-md-row justify-content-between ps-md-3 pe-md-3 mb-2">
+                                <a href="{% url 'blog:post_detail' 'post_slug_here' %}"> This is very long post title
+                                    that would not look nice on mobile</a>
+                                <span class="d-none d-md-inline flex-grow-1 dash"></span> <span
+                                    class="text-muted small">Oct 01, 2022</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

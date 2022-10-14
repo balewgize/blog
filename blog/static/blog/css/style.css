@@ -104,3 +104,12 @@ em.small {
     color: #007bff;
     background-color: #eeeeee;
 }
+
+#page-tag h1>i {
+    font-size: 1.2rem;
+}
+
+.dash {
+    margin: 0 0.5rem 0.6rem 0.5rem;
+    border-bottom: 2px dotted #c0c0c0;
+}
