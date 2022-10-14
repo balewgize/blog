@@ -16,12 +16,12 @@
         <span class="d-none d-md-flex align-items-center">
             <span><a href="{% url 'blog:home' %}">Home</a></span>
             <i class="mx-2 text-muted fas fa-angle-right" style="font-size: 10px; padding-top: 5px;"></i>
-            <span class="text-muted">Tags</span>
+            <span class="text-muted">Categories</span>
         </span>
         <span class="d-block d-md-none d-flex align-items-center justify-content-between ps-3 pe-3 ps-md-4 pe-md-4">
             <i id="sidebar-trigger" onclick="showMenu()" class="fas fa-bars fa-fw"></i>
             <i id="hideMenu" onclick="hideMenu()" class="fas fa-times fa-fw pe-5"></i>
-            <span div id="topbar-title">Tags</span>
+            <span div id="topbar-title">Categories</span>
             <i>&nbsp;</i>
         </span>
     </div>
@@ -34,32 +34,9 @@
                 <div class="post ps-1 pe-1 ps-md-2 pe-md-2">
                     <div id="post-list" class="py-4">
                         <div class="post-preview py-4">
-                            <h1>Tags</h1>
+                            <h1>Categories</h1>
                             <div class="post-content">
-                                <div id="tags" class="d-flex flex-wrap ml-xl-2 mr-xl-2">
-                                    <div>
-                                        <a class="tag" href="{% url 'blog:tag_detail' 'python' %}"> favicon <span
-                                                class="ms-2 text-muted">1</span> </a>
-                                    </div>
-                                    <div>
-                                        <a class="tag" href="{% url 'blog:tag_detail' 'getting started' %}"> getting
-                                            started
-                                            <span class="ms-2 text-muted">4</span> </a>
-                                    </div>
-                                    <div>
-                                        <a class="tag" href="{% url 'blog:tag_detail' 'google analytics' %}"> google
-                                            analytics
-                                            <span class="ms-2 text-muted">2</span> </a>
-                                    </div>
-                                    <div>
-                                        <a class="tag" href="{% url 'blog:tag_detail' 'pageviews' %}"> pageviews <span
-                                                class="ms-2 text-muted">1</span> </a>
-                                    </div>
-                                    <div>
-                                        <a class="tag" href="{% url 'blog:tag_detail' 'typography' %}"> typography <span
-                                                class="ms-2 text-muted">1</span> </a>
-                                    </div>
-                                </div>
+                                <p>Categories will be here</p>
                             </div>
                         </div>
                     </div>

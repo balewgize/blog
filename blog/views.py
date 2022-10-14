@@ -11,7 +11,7 @@ def post_detail(request, slug="post-slug-will-be-passed-from-url"):
 
 
 def categories(request):
-    return HttpResponse("Categories page")
+    return render(request, "blog/categories.html")
 
 
 def tags(request):
@@ -23,8 +23,8 @@ def tag_detail(request, tag="tagname"):
 
 
 def archives(request):
-    return HttpResponse("Archives page")
+    return render(request, "blog/archives.html")
 
 
 def about(request):
-    return HttpResponse("About page")
+    return render(request, "blog/about.html")

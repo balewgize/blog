@@ -124,4 +124,26 @@
 </div>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+    $(document).ready(function () {
+        let pathname = window.location.pathname;
+        let pages = ['/', '/categories/', '/tags/', '/archives/', '/about/'];
+
+        $('.nav-item').each(function (i) {
+            // we can activate the URL on the excact URL or sub URLs
+            // e.g on /tags and (optionaly on /tags/python)
+            if (pathname == (pages[i])) {
+                $(this).addClass('active');
+            } else if (this.classList.contains('active')) {
+                $(this).removeClass('active');
+            }
+        });
+    })
+</script>
+
 {% endblock %}
