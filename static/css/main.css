@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', 'Microsoft Yahei', sans-serif;
-    overflow-x: hidden;
+}
 
+html {
+    overflow-x: hidden;
 }
 
 a {
@@ -139,9 +141,7 @@ a {
     min-height: 100vh;
     padding-left: 0;
     padding-right: 0;
-    /* left: 260px; */
     transition: 0.5s;
-    overflow: hidden;
 }
 
 .post-preview h1 {
@@ -165,8 +165,10 @@ a {
     margin: 10px 0;
 }
 
-#access-lastmod a {
+#access-lastmod a,
+#access-tags a {
     color: #696969;
+    font-size: 0.85rem;
 }
 
 #access-lastmod a:hover {
@@ -218,6 +220,10 @@ a {
     #sidebar {
         left: -260px;
         padding-top: 20px;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
     #topbar-wrapper,
