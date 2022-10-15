@@ -137,6 +137,86 @@ em.small {
     display: none;
 }
 
+#access-lastmod li {
+    margin: 5px 0;
+}
+
+/* Archives page */
+
+#archives {
+    letter-spacing: 0.03rem;
+}
+
+#archives .year {
+    height: 3.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    left: 2px;
+    margin-left: -4px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#archives ul li:nth-child(odd) {
+    background-color: #ffffff;
+    background-image: linear-gradient(to left, #fff, #fbfbfb, #fbfbfb, #fbfbfb, #fff);
+}
+
+#archives ul li {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#archives .date {
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    right: 0.5rem;
+}
+
+#archives .date.day {
+    font-size: 85%;
+    font-family: 'Lato', sans-serif;
+}
+
+#archives .date.month {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+#archives a {
+    margin-left: 2.5rem;
+    position: relative;
+    top: -0.85rem;
+    color: #2a408e;
+}
+
+#archives a:hover {
+    color: #007bff;
+}
+
+#archives a::after {
+    content: "";
+    position: relative;
+    /* display: inline-block; */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    float: left;
+    top: 2rem;
+    left: 71px;
+    background-color: #c2c6cc;
+    z-index: 1;
+}
+
 @media (max-width: 576px) {
 
     #page-category ul>li::before,
